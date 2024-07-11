@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fc2bc15-70ab-4dfc-ac92-6dadbf4944ba" name="Changes" comment="unfinished version">
-      <change afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app" />
       <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\api\backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -149,7 +150,7 @@
       <updated>1720551459181</updated>
       <workItem from="1720551461639" duration="10088000" />
       <workItem from="1720640992776" duration="9535000" />
-      <workItem from="1720684998881" duration="13960000" />
+      <workItem from="1720684998881" duration="14596000" />
     </task>
     <task id="LOCAL-00001" summary="unfinished version">
       <option name="closed" value="true" />
@@ -159,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720716514899</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="unfinished version">
+      <option name="closed" value="true" />
+      <created>1720716611131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720716611131</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
