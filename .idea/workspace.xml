@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0fc2bc15-70ab-4dfc-ac92-6dadbf4944ba" name="Changes" comment="unfinished version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/backend/gpt_querier.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/backend/gpt_querier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/gpt_endpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/gpt_endpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/david/PycharmProjects/karl-azure-deploy/app",
+    "last_opened_file_path": "C:/Users/david/PycharmProjects/karl-azure-deploy/app/static/js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,10 +67,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\static\js" />
+      <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\static" />
       <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app" />
       <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\api\backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\static\css" />
+      <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy" />
       <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\templates" />
       <recent name="C:\Users\david\PycharmProjects\karl-azure-deploy\app\api" />
     </key>
@@ -150,7 +158,7 @@
       <updated>1720551459181</updated>
       <workItem from="1720551461639" duration="10088000" />
       <workItem from="1720640992776" duration="9535000" />
-      <workItem from="1720684998881" duration="14596000" />
+      <workItem from="1720684998881" duration="22132000" />
     </task>
     <task id="LOCAL-00001" summary="unfinished version">
       <option name="closed" value="true" />
@@ -168,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720716611131</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="unfinished version">
+      <option name="closed" value="true" />
+      <created>1720717318745</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720717318745</updated>
+    </task>
+    <task id="LOCAL-00004" summary="unfinished version">
+      <option name="closed" value="true" />
+      <created>1720717450542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720717450542</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +204,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/karl_azure_deploy$key.coverage" NAME="key Coverage Results" MODIFIED="1720641314645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/api/backend" />
-    <SUITE FILE_PATH="coverage/karl_azure_deploy$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1720716063125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/karl_azure_deploy$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1720725282108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
   </component>
 </project>

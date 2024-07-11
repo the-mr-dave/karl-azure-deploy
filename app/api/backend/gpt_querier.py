@@ -52,7 +52,7 @@ def query_run(task_id, file_name, json_prompt_values, antworten):
                 file.write("\n********************\n")
                 shared.tasks[task_id] = {"status": "processing", "progress": f"{counter} of {answer_quantity}"}
         print("Task completed")
-        shared.tasks[task_id] = {"status": "Done", "progress": f"Task completed", "fileName": file_name}
+        shared.tasks[task_id] = {"status": "Done", "progress": f"Task completed", "fileName": f"{file_name}_result.txt"}
     except Exception as e:
         print("Error")
         shared.tasks[task_id] = {"status": "Error", "progress": f"{e}"}

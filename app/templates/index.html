@@ -196,7 +196,7 @@
             console.log(contentType);
             console.log("i was here in line 197")
 
-            if(contentType && contentType.indexOf("application/json") === -1) {
+            if(contentType && contentType.indexOf("application/json") !== -1) {
                 return response.json().then(data => {
                     if(data.status === 'processing'){
                         console.log(data.status);

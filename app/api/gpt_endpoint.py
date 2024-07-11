@@ -26,8 +26,10 @@ class Upload(Resource):
                                   args=(task_id, filename, json_data, answers))
         thread.start()
         result = {"status": "file uploaded", "taskId": f"{task_id}"}
+        response = output_json(result, 200)
+        response.headers['Content-Type'] = 'application/json'
 
-        return output_json(result, 200, headers={'Content-Type': 'application/json'})
+        return response
 
 
 class Download(Resource):
@@ -37,7 +39,9 @@ class Download(Resource):
         if status == "processing":
             progress = task["progress"]
             result = {"status": "processing", "progress": f"{progress}"}
-            return output_json(result, 200)
+            response = output_json(result, 200)
+            response.headers['Content-Type'] = 'application/json'
+            return response
         if status == "Done":
             file_name = task["fileName"]
             print(file_name)
@@ -64,7 +68,9 @@ class Download(Resource):
             if os.path.exists(f"{task_id}.txt"):
                 os.remove(f"{task_id}.txt")
             result = {"status": "Error", "progress": f"{progress}"}
-            return output_json(result, 500)
+            response = output_json(result, 500)
+            response.headers['Content-Type'] = 'application/json'
+            return response
 
 
 def convert_file_content_into_list(file):
