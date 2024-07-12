@@ -8,7 +8,7 @@ from app.api.gpt_endpoint import Upload, Download
 app = Flask(__name__)
 CORS(app, expose_headers=['Content-Disposition'])
 api = Api(app, prefix='/api')
-
+shared.init_global_variable()
 api.add_resource(Upload, '/upload')
 api.add_resource(Download, '/download/<task_id>')
 
@@ -29,5 +29,4 @@ def bootstrap_js():
 
 
 if __name__ == '__main__':
-    shared.init_global_variable()
     app.run()
