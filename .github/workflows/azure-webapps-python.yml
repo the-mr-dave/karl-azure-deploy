@@ -32,6 +32,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: Dockerfile
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.x
