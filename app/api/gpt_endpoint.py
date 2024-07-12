@@ -13,23 +13,26 @@ import app.shared as shared
 
 class Upload(Resource):
     def post(self):
-        task_id = datetime.now().strftime('%Y%m%d%H%M%S%f')
-        metadata = request.files['metadata'].read().decode('utf-8')
-        json_data = json.loads(metadata)
+        try:
+            task_id = datetime.now().strftime('%Y%m%d%H%M%S%f')
+            metadata = request.files['metadata'].read().decode('utf-8')
+            json_data = json.loads(metadata)
 
-        file = request.files['file']
-        filename = secure_filename(file.filename).split('.')[0]
-        answers = convert_file_content_into_list(file)
+            file = request.files['file']
+            filename = secure_filename(file.filename).split('.')[0]
+            answers = convert_file_content_into_list(file)
 
-        shared.tasks[task_id] = {"status": "processing", "progress": f" 0 of {len(answers)}"}
-        thread = threading.Thread(target=gpt_querier.query_run,
-                                  args=(task_id, filename, json_data, answers))
-        thread.start()
-        result = {"status": "file uploaded", "taskId": f"{task_id}"}
-        response = output_json(result, 200)
-        response.headers['Content-Type'] = 'application/json'
+            shared.tasks[task_id] = {"status": "processing", "progress": f" 0 of {len(answers)}"}
+            thread = threading.Thread(target=gpt_querier.query_run,
+                                      args=(task_id, filename, json_data, answers))
+            thread.start()
+            result = {"status": "file uploaded", "taskId": f"{task_id}"}
+            response = output_json(result, 200)
+            response.headers['Content-Type'] = 'application/json'
 
-        return response
+            return response
+        except Exception as e:
+            return output_json(f"Error: {e}", 500)
 
 
 class Download(Resource):
