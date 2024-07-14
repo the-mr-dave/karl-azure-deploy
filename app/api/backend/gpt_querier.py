@@ -23,7 +23,7 @@ def query_run(task_id, file_name, json_prompt_values, antworten):
     counter = 0
     answer_quantity = len(antworten)
     try:
-        with open(f"{task_id}.txt", "w") as file:
+        with open(f"app/{task_id}.txt", "w") as file:
             file.write(f"Question: {values[0]}\n")
             if values[1]:
                 file.write(f"Points: {values[1]}\n")
