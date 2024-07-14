@@ -2,7 +2,7 @@ import re
 
 
 from app.api.backend.prompt_generator import PromptGenerator
-from app.api.backend.gpt_access import send_message
+from app.api.backend.gpt_access import send_message, optimize_response_of_gpt
 import app.shared as shared
 
 
@@ -48,7 +48,7 @@ def query_run(task_id, file_name, json_prompt_values, antworten):
                     result = send_message(message_text)
                 counter += 1
                 file.write(f"Answer nr: {counter}\nAnswer: {answer}\n")
-                file.write(result)
+                file.write(optimize_response_of_gpt(result))
                 file.write("\n********************\n")
                 shared.tasks[task_id] = {"status": "processing", "progress": f"{counter} of {answer_quantity}"}
         print("Task completed")
