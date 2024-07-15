@@ -1,4 +1,4 @@
-from flask import Flask, render_template, g
+from flask import Flask, render_template
 from flask_restful import Api
 from flask_cors import CORS
 import app.shared as shared

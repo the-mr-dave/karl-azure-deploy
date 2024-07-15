@@ -69,6 +69,21 @@ def send_message_and_temp(message, temp):
     return response['choices'][0]['message']['content']
 
 
+def optimize_response_of_gpt(response):
+    """
+    This method optimizes the response received from the API. There is a known issue, that GPT sometimes returns the
+    response with writing (```json) at the beginning and (```) at the end. This method removes these characters.
+    """
+    try:
+        if response.startswith("```"):
+            response = response.lstrip("```json")
+            response = response.rstrip("```")
+    except Exception as e:
+        print("The response is not valid JSON", e)
+    finally:
+        return response
+
+
 def convert_response_into_json(response):
     """
     This method converts the response received from the API into a json format.
